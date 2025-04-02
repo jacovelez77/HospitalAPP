@@ -11,9 +11,9 @@ package autonoma.hospitalAPP.main;
 
 public class HospitalAPP {
        public static void main(String[] args) {
-       
-        Biblioteca biblioteca = new Biblioteca();
-        VentanaPrincipal ventana = new VentanaPrincipal(biblioteca);
+        
+        HospitalAPP hospital = new HospitalAPP();
+        VentanaPrincipal ventana = new VentanaPrincipal(hospital);
         ventana.setVisible(true);
 
 
@@ -21,8 +21,4 @@ public class HospitalAPP {
     }
     
 }
-    public static void main(String[] args) {
-        // TODO code application logic here
-    }
-    
-}
+
