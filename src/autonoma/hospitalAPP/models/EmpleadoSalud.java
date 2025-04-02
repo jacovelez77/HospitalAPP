@@ -15,11 +15,14 @@ public class EmpleadoSalud extends Empleado {
     
     // constructor
 
-    public EmpleadoSalud(String especialidad, int horasTrabajadas, String nombre, int numeroDocumento, int edad, String area) {
-        super(nombre, numeroDocumento, edad, area);
+    public EmpleadoSalud(String especialidad, int horasTrabajadas, String nombre, int numeroDocumento, int edad, String area, String idUnico) {
+        super(nombre, numeroDocumento, edad, area, idUnico);
         this.especialidad = especialidad;
         this.horasTrabajadas = horasTrabajadas;
     }
+
+
+   
         //getters and setter
     public String getEspecialidad() {
         return especialidad;
@@ -37,10 +40,16 @@ public class EmpleadoSalud extends Empleado {
         this.horasTrabajadas = horasTrabajadas;
     }
 
+    /**
+     *
+     * @return
+     */
+    @Override
     public double getSalarioBase() {
         return salarioBase;
     }
 
+    @Override
     public void setSalarioBase(double salarioBase) {
         this.salarioBase = salarioBase;
     }
@@ -51,6 +60,10 @@ public class EmpleadoSalud extends Empleado {
     public double calcularSalarioNeto() {
         return salarioBase + (salarioBase * 0.012 * horasTrabajadas);
     }
+    
+    
+    
+    
  }
 
     

@@ -4,6 +4,8 @@
  */
 package autonoma.hospitalAPP.main;
 
+import autonoma.hospitalAPP.views.VentanaPrincipal;
+
 /**
  *
  * @author esteb
