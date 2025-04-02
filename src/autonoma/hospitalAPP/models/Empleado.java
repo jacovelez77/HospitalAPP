@@ -78,12 +78,8 @@ public class Empleado {
         this.idUnico = idUnico;
     }
 
- 
-
-
-    
-    
-
+  public double calcularSalarioNeto() {
+        return salarioBase * 1.2; // 20% adicional
    
-    
+    }
 }
